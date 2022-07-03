@@ -1,0 +1,71 @@
+@import "./index.scss";
+
+.header{
+    height: 59px;
+    display: flex;
+    padding: 23px 50px 0px 50px;
+}
+//лого
+.logo{
+    width: 190px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+}
+.logo_pic{
+    width: 68px;
+    height: 59px;
+}
+.logo_title{
+    font-family: "Iskra";
+    font-size: calcFluidFontSize(32, 36, 1400, 1920);
+    color: $main_text_color;
+}
+//навигация
+.navigation{
+    margin-left: 11%;
+    padding-top: 11px;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 20px;
+    width: 558px;
+}
+.nav{
+    margin-right: 12%;
+    cursor: pointer;
+}
+.nav:hover{
+    color: $main_text_color;
+    transition: All 0.5s ease;
+}
+.info{
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: 12px;
+}
+.telephone{
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+.time{
+    font-weight: normal;
+    font-size: 16px;
+}
+button.call{
+    margin-top: 11px;
+    width: 165px;
+    height: 52px;
+    font-weight:bold;
+    font-size: 15px;
+    color: $main_text_color;
+    background-color: $back_color;
+    border: 1px solid $main_text_color;
+    border-radius: 100px;
+}
+button.call:hover{
+    background-color: $main_text_color;
+    color: white;
+    transition: All 0.5s ease;
+}
