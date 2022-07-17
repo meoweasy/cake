@@ -1,0 +1,50 @@
+@import "./index.scss";
+
+.card{
+    margin: 37px;
+    width: 306px;
+    height: 500px;
+    border-color: black;
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(196, 196, 196, 0.12), 0px 12px 24px rgba(196, 196, 196, 0.32);
+}
+.card_desc{
+    margin: 24px;
+}
+.desc_title{
+    font-family: 'MontRegular';
+    font-size: 24px;
+}
+.desc_next_title{
+    margin-top: 16px;
+    font-family: 'MontLight';
+    font-size: 14px;
+    min-height: 91px;
+}
+.price_info{
+    min-width: 258px;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+}
+.price{
+    font-family: 'MontRegular';
+    font-size: 22px;
+}
+button.see_more{
+    margin-left: auto;
+    width: 97px;
+    height: 38px;
+    font-family: 'MontRegular';
+    font-size: 11px;
+    color: $main_text_color;
+    background-color: white;
+    border: 1px solid $main_text_color;
+    border-radius: 100px;
+}
+button.see_more:hover{
+    background-color: $main_text_color;
+    color: white;
+    transition: All 0.5s ease;
+}

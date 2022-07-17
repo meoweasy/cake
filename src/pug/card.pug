@@ -1,0 +1,12 @@
+mixin card(ClassName, product)
+    .card(class=ClassName)
+        .card_pic
+            img(src=require('../images/cards/'+ product.img))
+        .card_desc
+            .desc_title=product.desc_title
+            .desc_next_title=product.desc_next_title
+            .price_info
+                .price_and_weight
+                    .price=product.price
+                    .weight=product.weight
+                button.see_more Смотреть еще

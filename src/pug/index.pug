@@ -1,3 +1,5 @@
+- var file = require('/src/js/cards.json')
+
 doctype html
 html
   head
@@ -16,3 +18,19 @@ html
     .wave
       img(src=require('../images/part1/Wave.svg'))
     .part2
+      .container_part2
+        .title_part2 Выбери свой десерт!
+        .menu_part2
+          button.menu_item Торты
+          button.menu_item Капкейки
+          button.menu_item Конфеты
+          button.menu_item Разное
+        .carousel_block
+          button.carousel.left
+          //карусель торты
+          .carousel_cake
+            include ./card.pug
+            +card('item',file.item)
+            +card('item',file.item)
+            +card('item',file.item)
+          button.carousel.right
