@@ -1,0 +1,30 @@
+{
+    "item": {
+        "img": "cake/unsplash_3sgNkN4wRWI-1.png",
+        "desc_title": "Конфета1",
+        "desc_next_title":"подзаголовок",
+        "price":"1200 руб.",
+        "weight":"1.2 кг"
+    },
+    "item1": {
+        "img": "cake/unsplash_3sgNkN4wRWI-1.png",
+        "desc_title": "Конфета2",
+        "desc_next_title":"подзаголовок111",
+        "price":"12300 руб.",
+        "weight":"1.0 кг"
+    },
+    "item2": {
+        "img": "cake/unsplash_3sgNkN4wRWI-1.png",
+        "desc_title": "Конфета3",
+        "desc_next_title":"подdqwdqwdзаок",
+        "price":"10 руб.",
+        "weight":"1.2 кг"
+    },
+    "item3": {
+        "img": "cake/unsplash_3sgNkN4wRWI-1.png",
+        "desc_title": "Конфета4",
+        "desc_next_title":"лоgtвок",
+        "price":"100 руб.",
+        "weight":"1.2 кг"
+    }
+}
