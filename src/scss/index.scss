@@ -1,5 +1,7 @@
 @import './fonts.scss';
 @import './mixins.scss';
+@import './slick.scss';
+
 $main_text_color: #9C0646;
 $back_color: #FFECEF;
 $main_two_color: #BF0A57;
@@ -62,4 +64,114 @@ button.main_call:hover{
     margin-top: -1px;
     width: 100%;
     height: auto;
+}
+//2 часть
+.part2{
+    width: 100%;
+}
+.container_part2{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title_part2{
+    font-family: "Iskra";
+    color: $main_text_color;
+    font-size: calcFluidFontSize(50, 64, 1400, 1920);
+}
+//навигация карусели
+.menu_part2{
+    margin-top: 2%;
+    display: flex;
+}
+button.menu_item{
+    padding: 6px 20px 6px 20px;
+    font-style: normal;
+    font-size: 25px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+button.menu_item:hover{
+    color: $main_text_color;
+}
+button.menu_item:hover:after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: $main_text_color;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+//блок карусели
+.carousel_block{
+    //width: 1274px;
+    display: flex;
+}
+//кнопка карусели
+button.carousel{
+    margin-top:258px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(156, 6, 70, 0.12), 0px 12px 24px rgba(156, 6, 70, 0.32);
+    border-radius: 100px;
+}
+button.carousel:after{
+    position: absolute;
+    content: '';
+    margin-left: 19px;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    bottom: 0;
+    top: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-left: 2px solid $main_text_color;
+    border-bottom: 2px solid $main_text_color;
+}
+button.carousel:hover:after{
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+}
+button.carousel:hover{
+    background-color: $main_text_color;
+    transition: All 0.5s ease;
+}
+//левая кнопка
+button.carousel.left:after{
+    transform: rotate(45deg);
+}
+//правая кнопка
+button.carousel.right:after{
+    transform: rotate(-135deg);
+    margin-left: auto;
+    margin-right: 19px;
+}
+.menu_cake, .menu_cupcake, .menu_candy, .menu_different{
+    width: 1140px;
+    display: flex;
+}
+button.see_more.next_menu{
+    margin-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    width: 235px;
+    height: 64px;
 }

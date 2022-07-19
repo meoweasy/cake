@@ -1,3 +1,8 @@
+- var card_cake = require('/src/js/cards_cake.json')
+- var card_cupcake = require('/src/js/cards_cupcake.json')
+- var card_candy = require('/src/js/cards_candy.json')
+- var card_different = require('/src/js/cards_different.json')
+
 doctype html
 html
   head
@@ -16,3 +21,41 @@ html
     .wave
       img(src=require('../images/part1/Wave.svg'))
     .part2
+      .container_part2
+        .title_part2 Выбери свой десерт!
+        .menu_part2
+          button.menu_item.cake_btn Торты
+          button.menu_item.cupcake_btn Капкейки
+          button.menu_item.candy_btn Конфеты
+          button.menu_item.different_btn Разное
+        .carousel_block
+          //button.carousel.left(id="leftButton")
+          //button.carousel.right(id="rightButton")
+          //торты
+          .menu_cake
+            include ./card.pug
+            +card('item',card_cake.item)
+            +card('item',card_cake.item1)
+            +card('item',card_cake.item2)
+          //капкейки
+          .menu_cupcake
+            include ./card.pug
+            +card('item',card_cupcake.item)
+            +card('item',card_cupcake.item1)
+            +card('item',card_cupcake.item2)
+          //Конфеты
+          .menu_candy
+            include ./card.pug
+            +card('item',card_candy.item)
+            +card('item',card_candy.item1)
+            +card('item',card_candy.item2)
+          //Разное
+          .menu_different
+            include ./card.pug
+            +card('item',card_different.item)
+            +card('item',card_different.item1)
+            +card('item',card_different.item2)
+        button.see_more.next_menu Посмотреть еще
+    .wave
+      img(src=require('../images/part2/Wave2.svg'))
+          
