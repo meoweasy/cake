@@ -2,6 +2,7 @@
 - var card_cupcake = require('/src/js/cards_cupcake.json')
 - var card_candy = require('/src/js/cards_candy.json')
 - var card_different = require('/src/js/cards_different.json')
+- var card_topping = require('/src/js/cards_topping.json')
 
 doctype html
 html
@@ -29,8 +30,6 @@ html
           button.menu_item.candy_btn Конфеты
           button.menu_item.different_btn Разное
         .carousel_block
-          //button.carousel.left(id="leftButton")
-          //button.carousel.right(id="rightButton")
           //торты
           .menu_cake
             include ./card.pug
@@ -58,4 +57,20 @@ html
         button.see_more.next_menu Посмотреть еще
     .wave
       img(src=require('../images/part2/Wave2.svg'))
+    .part3
+      .cotainer_part3
+        .title_part3 Начинки
+        .carousel_toppings
+          button.carousel.left(id="leftButton")
+          .toppings
+            include ./card.pug
+            +card('item',card_topping.item)
+            +card('item',card_topping.item1)
+            +card('item',card_topping.item2)
+            +card('item',card_topping.item3)
+          button.carousel.right(id="rightButton")
+    .wave(id="Wave3")
+      img(src=require('../images/part3/Wave3.svg'))
+
+
           
