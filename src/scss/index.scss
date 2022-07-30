@@ -175,3 +175,33 @@ button.see_more.next_menu{
     width: 235px;
     height: 64px;
 }
+//блок с начинками
+.part3{
+    height: 676px;
+    width: 100%;
+    background-color: $back_color;
+    margin-top: -5px;
+}
+.cotainer_part3{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title_part3{
+    font-family: "Iskra";
+    color: $main_text_color;
+    font-size: calcFluidFontSize(50, 64, 1400, 1920);
+}
+.carousel_toppings{
+    display: flex;
+}
+.toppings{
+    display: flex;
+    width: 1140px;
+    height: 574px;
+}
+#Wave3{
+    margin-top: -30px;
+}

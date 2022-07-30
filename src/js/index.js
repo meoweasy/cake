@@ -4,21 +4,13 @@ import "../scss/card.scss";
 import "./slick.min";
 const $ = require('jquery')
     
-$('.carousel_cake').slick({
+$('.toppings').slick({
     nextArrow: document.getElementById('rightButton'),
     prevArrow: document.getElementById('leftButton'),
     arrows: true,
     slidesToShow:3,
     slidesToScroll:1,
     dots: false,
-});
-$('.carousel_cupcake').slick({
-  nextArrow: document.getElementById('rightButton'),
-  prevArrow: document.getElementById('leftButton'),
-  arrows: true,
-  slidesToShow:3,
-  slidesToScroll:1,
-  dots: false,
 });
 
 $(function () {
