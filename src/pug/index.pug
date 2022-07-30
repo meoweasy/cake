@@ -71,6 +71,63 @@ html
           button.carousel.right(id="rightButton")
     .wave(id="Wave3")
       img(src=require('../images/part3/Wave3.svg'))
+    .part4
+      .container_part4
+        .title_part4 Cформируйте индивидуальный заказ
+        .form
+          .container_form
+            .form_item
+              .form_item_title
+                .circle 1
+                .form_item_text Выберите вид десерта
+              .drop_list
+                select
+                  option(id="placeholder") Выбрать десерт...
+                  option Торт
+                  option Капкейк
+                  option Другое
+            .form_item
+              .form_item_title
+                .circle 2
+                .form_item_text Выберите начинку
+              .drop_list
+                select
+                  option(id="placeholder") Выбрать начинку...
+                  option Торт
+                  option Капкейк
+                  option Другое
+            .form_item
+              .form_item_title
+                .circle 3
+                .form_item_text Выберите крем/декор
+              .drop_list
+                select
+                  option(id="placeholder") Выбрать крем/декор...
+                  option Торт
+                  option Капкейк
+                  option Другое
+            .form_item
+              .form_item_title
+                .circle 4
+                .form_item_text Добавьте свои пожелания
+              textarea(type="text" placeholder="Добавить комментарий...").comment
+            .form_item
+              .form_item_title
+                .circle 5
+                .form_item_text Оставьте свои контакты
+              input(type="name", placeholder="Введите имя").form_name
+              input(type="telephone", placeholder="Введите номер телефона").form_telephone
+            .form_item
+              .form_item_title
+                .circle 6
+                .form_item_text Добавьте фото
+              .file_button
+                input#file.input-file(type='file' name="photo" multiple accept="image/*,image/jpeg")
+                label.file_btn_label(for="file")
+                  span.file_btn_text Добавить фото...
+            button.send_form Оформить заказ
+
+
 
 
           

@@ -4,21 +4,13 @@ import "../scss/card.scss";
 import "./slick.min";
 const $ = require('jquery')
     
-$('.carousel_cake').slick({
+$('.toppings').slick({
     nextArrow: document.getElementById('rightButton'),
     prevArrow: document.getElementById('leftButton'),
     arrows: true,
     slidesToShow:3,
     slidesToScroll:1,
     dots: false,
-});
-$('.carousel_cupcake').slick({
-  nextArrow: document.getElementById('rightButton'),
-  prevArrow: document.getElementById('leftButton'),
-  arrows: true,
-  slidesToShow:3,
-  slidesToScroll:1,
-  dots: false,
 });
 
 $(function () {
@@ -51,3 +43,20 @@ $(function () {
     $(".menu_different").show();
   });
 });
+
+let inputs = document.querySelectorAll('.input-file');
+    Array.prototype.forEach.call(inputs, function (input) {
+      let label = input.nextElementSibling,
+        labelVal = label.querySelector('.file_btn_text').innerText;
+  
+      input.addEventListener('change', function (e) {
+        let countFiles = '';
+        if (this.files && this.files.length >= 1)
+          countFiles = this.files.length;
+  
+        if (countFiles)
+          label.querySelector('.file_btn_text').innerText = 'Выбрано файлов: ' + countFiles;
+        else
+          label.querySelector('.file_btn_text').innerText = labelVal;
+      });
+    });

@@ -175,3 +175,224 @@ button.see_more.next_menu{
     width: 235px;
     height: 64px;
 }
+//блок с начинками
+.part3{
+    height: 676px;
+    width: 100%;
+    background-color: $back_color;
+    margin-top: -5px;
+}
+.cotainer_part3{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title_part3{
+    font-family: "Iskra";
+    color: $main_text_color;
+    font-size: calcFluidFontSize(50, 64, 1400, 1920);
+}
+.carousel_toppings{
+    display: flex;
+}
+.toppings{
+    display: flex;
+    width: 1140px;
+    height: 574px;
+}
+#Wave3{
+    margin-top: -30px;
+}
+//4 блок(форма)
+.part4{
+    width: 100%;
+    height: 942px;
+}
+.container_part4{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title_part4{
+    text-align: center;
+    width: 676px;
+    font-family: "Iskra";
+    color: $main_text_color;
+    font-size: calcFluidFontSize(50, 64, 1400, 1920);
+}
+.form{
+    margin-top: 99px;
+    width: 1109px;
+    height: 624px;
+    background: rgba(255, 255, 255, 0.32);
+    box-shadow: 8px 8px 24px rgba(156, 6, 70, 0.32), -8px -8px 24px rgba(156, 6, 70, 0.32);
+    border-radius: 18px;
+}
+.container_form{
+    margin: 48px 63px 48px 63px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form_item{
+    width: 266px;
+    height: 119px;
+}
+.form_item_title{
+    display: flex;
+    align-items: center;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: $main_text_color;
+    border-radius: 50%;
+    font-family: "Iskra";
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+.form_item_text{
+    margin-left: 11px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+    color: $main_text_color;
+}
+select{
+    padding: 10px 36.5px 10px 36.5px;
+    font-family: 'MontRegular';
+    font-size: 16px;
+    background-color:  rgba(255, 236, 238, 0.3);
+    width: 263px;
+    height: 44px;
+    background: rgba(255, 236, 238, 0.3);
+    border: 1px solid rgba(156, 6, 70, 0.5);
+    border-radius: 10px;
+    color: rgba(156, 6, 70, 0.5);
+    appearance: none;
+}
+select:focus{
+    outline: none;
+}
+#placeholder{
+    display: none;
+}
+.form_item:nth-child(2){
+    margin-left: 92px;
+    margin-right: 92px;
+}
+.drop_list{
+    margin-top: 14px;
+}
+.form_item:nth-child(4){
+    width: 444px;
+    height: 216px;
+    margin-top: 37px;
+}
+.comment{
+    margin-top: 14px;
+    width: 371px;
+    height: 132px;
+    resize: none;
+    padding: 10px 36.5px 0px 36.5px;
+    font-family: 'MontRegular';
+    font-size: 16px;
+    background-color:  rgba(255, 236, 238, 0.3);
+    border: 1px solid rgba(156, 6, 70, 0.5);
+    border-radius: 10px;
+    color: rgba(156, 6, 70, 0.5);
+}
+textarea:focus{
+    outline: none;
+}
+textarea::placeholder{
+    font-family: 'MontRegular';
+    font-size: 16px;
+    color: rgba(156, 6, 70, 0.5); 
+}
+.form_item:nth-child(5){
+    width: 367px;
+    height: 186px;
+    margin-top: 37px;
+    margin-left: 114px;
+}
+.form_name , .form_telephone{
+    width: 366px;
+    height: 24px;
+    padding: 0px 50px 0px 50px;
+    font-family: 'MontRegular';
+    font-size: 16px;
+    background-color:  rgba(255, 236, 238, 0.3);
+    width: 263px;
+    height: 44px;
+    background: rgba(255, 236, 238, 0.3);
+    border: 1px solid rgba(156, 6, 70, 0.5);
+    border-radius: 10px;
+    color: rgba(156, 6, 70, 0.5);
+}
+.form_name{
+    margin-top: 14px;
+}
+.form_telephone{
+    margin-top: 21px;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    font-family: 'MontRegular';
+    font-size: 16px;
+    color: rgba(156, 6, 70, 0.5); 
+}
+.form_item:nth-child(6){
+    margin-top: 37px;
+}
+.input-file{
+    width:.1px;
+    height:.1px;
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    z-index:-1;
+}
+.file_button{
+    margin-top: 24px;
+}
+.file_btn_label{
+    padding: 10px 50px 10px 50px;
+    font-family: 'MontRegular';
+    font-size: 16px;
+    background-color:  rgba(255, 236, 238, 0.3);
+    width: 263px;
+    height: 44px;
+    background: rgba(255, 236, 238, 0.3);
+    border: 1px solid rgba(156, 6, 70, 0.5);
+    border-radius: 10px;
+    color: rgba(156, 6, 70, 0.5);
+}
+span.file_btn_text{
+    display: inline-block;
+    width: 160px;
+}
+button.send_form{
+    margin-left: 453px;
+    margin-top: 90px;
+    width: 233px;
+    height: 64px;
+    font-weight:bold;
+    font-size: 15px;
+    color: $main_text_color;
+    background-color:  rgba(255, 236, 238, 0.3);
+    border: 1px solid $main_text_color;
+    border-radius: 100px;
+}
+button.send_form:hover{
+    background-color: $main_text_color;
+    color: white;
+    transition: All 0.5s ease;
+}
